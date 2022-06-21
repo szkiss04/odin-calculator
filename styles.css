@@ -1,68 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
 * {
+    font-family: "Potta One", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: lightgray;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #835889;
 }
 
-.calculator {
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 25%;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    font-size: 4rem;
+    background-color: #A0E3B2;
+}
+
+.calculator-container,
+.button-rows,
+.column-container {
     display: flex;
     flex-direction: column;
-    max-width: 50%
 }
 
-.button-container1 {
+.calculator-container {
+    max-width: 600px;
+    min-height: 70vh;
+    padding: .5rem;
+    flex: 1;
+    border: 8px solid #2D1E2F;
+    border-radius: .5rem;
+}
+
+.button-container {
     display: flex;
+    flex: 1;
 }
 
-.button-container2 {
+.button-rows {
     flex: 3;
 }
 
-.button-column {
+.row {
     display: flex;
-    flex-direction: column;
     flex: 1;
 }
 
-.button-column button {
-    flex: 1;
-}
-
-.button-row {
-    display: flex;
-}
-
-.button-row button {
+.column-container {
     flex: 1;
 }
 
 button {
     flex: 1;
-    padding: .5rem;
-    margin: .5rem;
-    border: 2px solid rgb(107, 186, 212);
-    background-color: rgb(190, 227, 241);
-    box-shadow: 1px 4px #888888;
-    transition: ease-in box-shadow, border 100ms;
-    font-size: 1rem;
+    border: none;
+    background-color: #A0E3B2;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #04151F;
+}
+
+.wider {
+    flex: 2;
+}
+
+.taller {
+    min-height: 40%;
+}
+
+.op {
+    background-color: #2D1E2F;
+    color: #F5E6CC;
 }
 
 button:active {
-    box-shadow: none;
-    border: 4px solid rgb(16, 77, 97);
+    background-color: #2A8D45;
 }
 
-#screen {
-    font-size: 2rem;
-    background-color: rgb(190, 227, 241);
-    border: 4px solid rgb(16, 77, 97);
+button.op:active {
+    background-color: #B38FB7;
 }
