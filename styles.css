@@ -17,13 +17,13 @@ body {
 }
 
 .screen {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
     align-items: center;
-    height: 25%;
+    height: 1,5em;
     border: 1px solid gray;
-    padding: 0.5rem;
-    font-size: 4rem;
+    padding: 1rem;
+    font-size: 2rem;
     background-color: #A0E3B2;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .calculator-container {
-    max-width: 600px;
+    max-width: 400px;
     min-height: 70vh;
     padding: .5rem;
     flex: 1;

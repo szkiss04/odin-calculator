@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>The Odin Project: Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>r
 </head>
 
 <body>
@@ -13,35 +14,35 @@
         <div class="button-container">
             <div class="button-rows">
                 <div class="row">
-                    <button type="button" class="calc-button op">AC</button>
-                    <button type="button" class="calc-button op">/</button>
-                    <button type="button" class="calc-button op">*</button>
+                    <button type="button" class="calc-button op" data-clear>AC</button>
+                    <button type="button" class="calc-button op" data-operator>/</button>
+                    <button type="button" class="calc-button op" data-operator>*</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="calc-button">7</button>
-                    <button type="button" class="calc-button">8</button>
-                    <button type="button" class="calc-button">9</button>
+                    <button type="button" class="calc-button" data-number>7</button>
+                    <button type="button" class="calc-button" data-number>8</button>
+                    <button type="button" class="calc-button" data-number>9</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="calc-button">4</button>
-                    <button type="button" class="calc-button">5</button>
-                    <button type="button" class="calc-button">6</button>
+                    <button type="button" class="calc-button" data-number>4</button>
+                    <button type="button" class="calc-button" data-number>5</button>
+                    <button type="button" class="calc-button" data-number>6</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="calc-button">1</button>
-                    <button type="button" class="calc-button">2</button>
-                    <button type="button" class="calc-button">3</button>
+                    <button type="button" class="calc-button" data-number>1</button>
+                    <button type="button" class="calc-button" data-number>2</button>
+                    <button type="button" class="calc-button" data-number>3</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="calc-button wider">0</button>
-                    <button type="button" class="calc-button">.</button>
+                    <button type="button" class="calc-button wider" data-number>0</button>
+                    <button type="button" class="calc-button" data-decimal>.</button>
                 </div>
 
             </div>
             <div class="column-container">
-                <button type="button" class="op">-</button>
-                <button type="button" class="taller op">+</button>
-                <button type="button" class="taller op">=</button>
+                <button type="button" class="op" data-operator>-</button>
+                <button type="button" class="taller op" data-operator>+</button>
+                <button type="button" class="taller op" data-equals>=</button>
             </div>
         </div>
     </div>
