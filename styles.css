@@ -35,8 +35,8 @@ body {
 }
 
 .calculator-container {
-    max-width: 400px;
-    min-height: 70vh;
+    max-width: 90vw;
+    min-height: 90vh;
     padding: .5rem;
     flex: 1;
     border: 8px solid #2D1E2F;
