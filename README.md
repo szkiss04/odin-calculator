@@ -10,6 +10,6 @@ TO-DO's:
     - Backspace support!
     - Maybe an expression parser/evaluator? (Not JavaScript eval()!)
 
-Live demo: https://szkiss.github.io/odin-calculator
+Live demo: https://szkiss04.github.io/odin-calculator/
 
 This project is part of "The Odin Project" curriculum.
